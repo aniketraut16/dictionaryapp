@@ -21,11 +21,11 @@ function App() {
   }, []);
   return (
     <>
-      <Router basename="/dictionaryapp">
+      <Router>
         {!isLoaded && <LoadingSpinner />}
         <Navbar />
         <Routes>
-          <Route exact path="/dictionaryapp" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/events" element={<Events />} />
